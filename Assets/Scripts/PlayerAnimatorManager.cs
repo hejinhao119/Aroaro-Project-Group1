@@ -56,8 +56,11 @@ namespace Photon.Pun.Demo.PunBasics
 			// only allow jumping if we are running.
             if (stateInfo.IsName("Base Layer.Run"))
             {
-				// When using trigger parameter
-                if (Input.GetButtonDown("Fire2")) animator.SetTrigger("Jump"); 
+                // When using trigger parameter
+                if (Input.GetButtonDown("Fire2"))
+                {
+                    animator.SetTrigger("Jump");
+                }
 			}
            
 			// deal with movement
